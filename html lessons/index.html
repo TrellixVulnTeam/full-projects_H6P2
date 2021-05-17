@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="description" content="Training in HTML and CSS">
+  <meta name="author" content="Oleg Tseiko">
+  <base href="index.html" target="_self">
+  <!-- all this meta tags is for SEO keep in mynd attributes -->
+  <title>Html training</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="demo_async.js" async></script>
+  <!-- defer is opposite async  -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav navbar">
+        <li><a href="index.html" hreflang="en" accesskey="h">home</a></li>
+        <li><a href="forms.html" hreflang="en">forms</a></li>
+        <li><a href="graphics.html">graphics</a></li>
+        <li><a href="media.html">media</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="containers content-block">
+    <h1>First heading</h1>
+    <h2>Second heading</h2>
+    <!-- In this block used bold, italic, marked, deleted, inserted, subscript, superscript -->
+    <p contenteditable="true"><b>Sed mollis</b>, eros et ultrices tempus, <strong> mauris ipsum </strong> <em> aliquam libero</em>, non adipiscing <i> dolor urna</i> a orci. <mark> Vestibulum eu odio </mark>. Phasellus nec <small>sem in justo</small> pellentesque facilisis. <del> Nunc interdum</del> <s>lacus</s> sit amet orci.
+
+    <ins>inserted text</ins> arcu tortor, <sub> subscript text</sub>, imperdiet nec, <sup> superscript text</sup>. Proin faucibus arcu quis ante. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Curabitur a felis in nunc fringilla tristique.
+    <samp>File not found.<br>Press F1 to continue</samp>
+    Praesent ac massa at ligula laoreet iaculis. Etiam vitae tortor. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Nullam cursus lacinia erat.</p>
+    <h2>Second heading</h2>
+    <progress id="file" value="32" max="100"> 32% </progress>
+    <!-- From this point blockqoute for citation q for quick citation abbr for abbreviations, address to mark contact information, cite to mark intelectual work, bdo to override text direction(in this case from right to left) -->
+     <blockquote cite="http://loremipsum.com">
+
+    Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Vestibulum eu odio. Phasellus nec sem in justo pellentesque facilisis. Nunc interdum lacus sit amet orci. </blockquote>
+
+    <q cite="http://loremipsum.com"> Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Proin faucibus arcu quis ante. <bdi> Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien</bdi>, a accumsan nisi mauris ac eros. Curabitur a felis in nunc <dfn>HTML</dfn> tristique. </q>
+    <details>
+      <summary>Epcot Center</summary>
+      <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+    32<label for="disk_c">Disk usage C:</label>
+    <meter id="disk_c" value="2" min="0" max="10" optimum="5" high="8" low="4">2 out of 10</meter><br>
+    <meter id="disk_c" value="5" min="0" max="10" high="8" optimum="5" low="4">2 out of 10</meter><br>
+    <meter id="disk_c" value="6" min="0" max="10" high="8" optimum="5" low="4">2 out of 10</meter><br>
+    <meter id="disk_c" value="9" min="0" max="10" high="8" optimum="5" low="4">2 out of 10</meter><br>
+    <abbr title="Hypertext transfer protocol"> HTTP </abbr>
+    <dialog open>This is an open dialog window</dialog>
+    <address class="">
+      O.Tseiko@gmail.com
+    </address> <cite>Lord of the Clans</cite>
+    <bdo dir="rtl">Praesent ac massa at ligula laoreet iaculis. Etiam vitae tortor. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Nullam cursus lacinia erat.</bdo>
+    <h2 title="here some help!">Second heading</h2>
+    <!-- data type is used in js for whatever reason -->
+    <p draggable="true" data-longword-type="132 charecters" ondrop="someFunction()">Thisisveryveryveryveryveryveryveryveryveryver<wbr>yveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryve<wbr>ryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryver<wbr>yveryveryveryveryveryveryverylongword</p>
+    <!-- there is ton of a onthing script the list is onabort(	<audio>, <embed>, <img>, <object>, <video>), onafterprint, onbeforeprint, onbeforeunload, onhashchange, onoffline, ononline, onpagehide, onpageshow, onpopstate, onresize, onstorage, onunload(body), onblur, onchange, onclick, oncontextmenu, oncopy, oncut, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, onfocus, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onpaste, onscroll, onselect, onwheel(visible elements), oncanplay, onerror (	<audio>, <embed>, <object>, <video>), oncanplaythrough, ondurationchange, onemptied, onended, onloadeddata, onloadedmetadata, onloadstart, onpause, onplay, onplaying, onprogress, onratechange, onseeked, onseeking, onstalled, onsuspend, ontimeupdate, onvolumechange, onwaiting (	<audio>, <video>), oncuechange(track), onload(<body>, <iframe>, <img>, <input>, <link>, <script>, <style>), onreset, onsubmit(<form>), onsearch(<input>), ontoggle, open (<details>) optimum (<details>),     -->
+    <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+    <!-- The <bdi> tag isolates a part of text that might be formatted in a different direction from other text outside it.
+
+This element is useful when embedding user-generated content with an unknown text direction. -->
+    <!-- all elements can have title help attribute -->
+    <div class="rows">
+      <div class="two_columns">
+        <img src="https://picsum.photos/id/237/200/300" alt="cute dog picture" width="200px" height="300px">
+        <!-- image can have width and height as attributes -->
+      </div>
+
+      <div class="two_columns">
+        <p>Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Vestibulum eu odio. Phasellus nec sem in justo pellentesque facilisis. Nunc interdum lacus sit amet orci.
+
+        Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Proin faucibus arcu quis ante. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Curabitur a felis in nunc fringilla tristique.
+
+        Praesent ac massa at ligula laoreet iaculis. Etiam vitae tortor. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Nullam cursus lacinia erat.</p>
+        <!-- this is standart link settings with absolute path -->
+        <a href="https://sass-lang.com/documentation/style-rules" target="_self">read more...</a>
+        <!-- this one opens it new tab with relative path -->
+        <a href="references.html" target="_blank">or more...</a>
+        <!-- this opens document in parent frame -->
+        <a href="graphics.html" target="_parent">or more...</a>
+        <!-- open a document in full body of the window -->
+        <a href="api.html" target="_top">or much more...</a>
+
+      </div>
+
+    </div>
+    <h2 class="clear">Second heading</h2>
+    <noscript>
+      your browser is capitoha!
+    </noscript>
+    <p>Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Vestibulum eu odio. Phasellus nec sem in justo pellentesque facilisis. Nunc interdum lacus sit amet orci.
+
+    Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Proin faucibus arcu quis ante. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Curabitur a felis in nunc fringilla tristique.
+
+    Praesent ac massa at ligula laoreet iaculis. Etiam vitae tortor. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Nullam cursus lacinia erat.</p>
+    <!-- download attribute to <a> is used to download file which link in anchored to -->
+    <div class="rows">
+      <div class="group_for_three">
+        <img src="https://picsum.photos/id/13/400/300" alt="ocean and things" usemap="#first_one">
+        <map name="first_one">
+          <area shape="rect" coords="0, 0, 160, 300" href="api.html" alt="half image area first">
+          <area shape="rect" coords="160, 0, 400, 300," href="api.html" alt="half image area second">
+        </map>
+      </div>
+      <div class="group_for_three">
+        <!-- When present, it specifies that the image is part of a server-side image map (an image map is an image with clickable areas). -->
+        <img src="https://picsum.photos/id/128/400/300" alt="lake and mountains" usemap="#second_one" ismap>
+        <!-- Note: The ismap attribute is allowed only if the <img> element is a descendant of an <a> element with a valid href attribute. -->
+        <map name="second_one">
+          <area shape="circle" coords="40, 50, 33" href="forms.html" alt="mountains circle">
+          <area shape="circle" coords="200, 140, 33" href="forms.html" alt="grass circle">
+        </map>
+      </div>
+      <div class="group_for_three">
+        <img src="https://picsum.photos/id/129/400/300" alt="couple in desert" usemap="#third_one">
+        <map name="third_one">
+          <area shape="poly" coords="100,21,141,6,164,50,164,112,151,160,100,219,45,245,18,242,37,212,40,149,63,51,78,37" href="examples.html" alt="crousaint shape">
+        </map>
+      </div>
+
+    </div>
+    <div class="picture_in">
+      <figure>
+        <picture>
+          <source media="(max-width: 768px)" srcset="https://picsum.photos/id/151/500/300">
+          <source media="(max-width: 998px)" srcset="https://picsum.photos/id/151/700/400">
+          <img src="https://picsum.photos/id/151/966/500" alt="nature overview">
+        </picture>
+        <figcaption>
+          Lorem ipsum dolor sit amet, consectetur.
+        </figcaption>
+    </figure>
+    </div>
+  </main>
+  <template>
+    <h2>Flower</h2>
+  </template>
+  <details open>
+    <summary>Epcot Center</summary>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  </details>
+  <div class="tables">
+    <table>
+      <caption>This is caption</caption>
+      <colgroup>
+        <col style="background-color:red">
+        <col style="background-color:blue">
+        <col span="2" style="background-color:yellow">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>First header</th>
+          <th id="second_head" scope="col">Second header</th>
+          <th colspan="2" scope="col">Third header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First cell</td>
+          <td>Second cell</td>
+          <td>Third cell</td>
+          <td headers="second_head">Fourth cell</td>
+        </tr>
+        <tr>
+          <td>Third column cell</td>
+          <td>Third column cell</td>
+          <td rowspan="2">Third column cell</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Second column cell</td>
+          <td>Second column cell</td>
+          <td rowspan="2">Second column cell</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <div class="lists">
+    <ul>
+      <li tabindex="1">Lorem ipsum dolor</li>
+      <li tabindex="3">Lorem ipsum dolor</li>
+      <li tabindex="2">Lorem ipsum dolor</li>
+      <li tabindex="5">Lorem ipsum dolor</li>
+      <li tabindex="4">Lorem ipsum dolor</li>
+    </ul>
+    <ol type="1" start="50">
+      <li translate="no">Lorem ipsum dolor sit amet, consectetur.</li>
+      <li>Debitis, quae exercitationem impedit saepe eos.</li>
+      <li>Pariatur, eveniet animi mollitia soluta minima.</li>
+      <li>Rem sint recusandae perferendis illum numquam.</li>
+    </ol>
+    <ol type="a" reversed>
+      <li>Lorem ipsum dolor sit amet, consectetur.</li>
+      <li>Debitis, quae exercitationem impedit saepe eos.</li>
+      <li>Pariatur, eveniet animi mollitia soluta minima.</li>
+      <li>Rem sint recusandae perferendis illum numquam.</li>
+    </ol>
+    <ol type="A">
+      <li>Lorem ipsum dolor sit amet, consectetur.</li>
+      <li>Debitis, quae exercitationem impedit saepe eos.</li>
+      <li>Pariatur, eveniet animi mollitia soluta minima.</li>
+      <li>Rem sint recusandae perferendis illum numquam.</li>
+    </ol>
+    <ol type="i">
+      <li>Lorem ipsum dolor sit amet, consectetur.</li>
+      <li>Debitis, quae exercitationem impedit saepe eos.</li>
+      <li>Pariatur, eveniet animi mollitia soluta minima.</li>
+      <li>Rem sint recusandae perferendis illum numquam.</li>
+    </ol>
+    <ol type="I">
+      <li>Lorem ipsum dolor sit amet, consectetur.</li>
+      <li>Debitis, quae exercitationem impedit saepe eos.</li>
+      <li>Pariatur, eveniet animi mollitia soluta minima.</li>
+      <li>Rem sint recusandae perferendis illum numquam.</li>
+    </ol>
+    <dl>
+      <dt>Lorem ipsum dolor sit.</dt>
+      <dd>Ad aliquam magni veniam dolorum.</dd>
+      <dt>Sed, dolorem, neque. Cumque!</dt>
+      <dd>Ratione hic deleniti aspernatur ipsam.</dd>
+      <dt>Ea, eum excepturi consequuntur!</dt>
+      <dd>Lorem ipsum dolor sit amet.</dd>
+    </dl>
+    <ul>
+      <li>Lorem ipsum dolor sit amet, consectetur.</li>
+      <li>Earum asperiores vero reiciendis. Consequatur, iure.</li>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+        <li>Repellat, laudantium fuga suscipit eum maiores voluptate possimus!</li>
+        <li>Adipisci dolores officia eligendi quibusdam labore vel? Earum.</li>
+      </ul>
+      <li>Dolorum possimus esse, vel porro provident.</li>
+      <li>Architecto harum voluptate accusamus adipisci ea.</li>
+    </ul>
+  </div>
+  <div class="codes_some">
+    <code>
+    x = 5;
+    y = 6;
+    z = x + y;
+    </code>
+    <!-- used to display bunch of programming code -->
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+    <!-- used to explain that this command is keyboard input
+     sample output from computer program -->
+    <pre>
+      <code>
+      x = 5;
+      y = 6;
+      z = x + y;
+      </code>
+    </pre>
+    <!-- answer to getting formation right -->
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+    <!-- marks up variables in italic -->
+    <iframe srcdoc="<p>Hello world!</p>" src="demo_iframe_srcdoc.htm"></iframe>
+  </div>
+</body>
+</html>

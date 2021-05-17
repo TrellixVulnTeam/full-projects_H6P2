@@ -1,0 +1,52 @@
+.content-block {
+  background-color: $primary-color;
+  padding: 40px;
+  border-radius: 5px;
+  .two_columns {
+    img {
+      width: 20%;
+      display: block;
+      margin: 0px 15px 15px 0px;
+      float: left;
+    }
+  }
+}
+.content-block h1 {
+  font-size: 22px;
+  text-align: left;
+  color: $secondary-color;
+}
+.content-block h2 {
+  font-size: 20px;
+  text-align: left;
+  color: $secondary-color;
+}
+.content-block p {
+  font-size: 18px;
+  text-align: justify;
+  color: $white-color;
+}
+.rows {
+  overflow: auto;
+}
+.rows::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.group_for_three {
+  float: left;
+  width: 32%;
+  margin: 0 5px;
+  img {
+    width: 100%;
+
+  }
+}
+.picture_in img {
+  margin: 0 auto;
+  display: block;
+}
+.tables table {
+  margin: 20px auto;
+}

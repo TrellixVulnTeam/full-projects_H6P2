@@ -1,0 +1,98 @@
+header {
+  background: url(../img/header.png) no-repeat center center;
+  background-position: top;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  nav {
+    padding: 27px 0 0 0!important;
+    .nav_grid {
+      justify-content: flex-end;
+    }
+    .navbar-brand {
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-family: 'Quicksand', sans-serif;
+      .navbar_small_headl {
+        font-weight: 700;
+        width: 44px;
+        height: 14px;
+        opacity: 0.3;
+        font-size: 9px;
+        line-height: 10px;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-left: 4px;
+        letter-spacing: 0.9px;
+      }
+    }
+    .navbar-nav {
+      padding: 0px 0px 5px 0px;
+      letter-spacing: 0.24px;
+    }
+    .nav-item {
+      margin: 0 0 0 21px;
+    }
+    .nav-item .nav-link {
+      color: #fffefe!important;
+      font-weight: 600;
+      padding: 0!important;
+      &:hover, &:focus {
+        color: #fffefe!important;
+      }
+    }
+  }
+  h2 {
+    color: $white_color;
+  }
+  button {
+    color: #fff;
+    background-color: transparent;
+    outline: none !important;
+    border: 1px solid rgba(255,255,255,0.2);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 26px;
+    letter-spacing: 0px;
+    line-height: 24px;
+  }
+  img {
+    margin: 48px 0 0 -20px;
+    position: absolute;
+  }
+  .header_description {
+    padding: 0 0 110px 0;
+    h3 {
+      padding: 70px 0 0 0;
+      letter-spacing: 1.4px;
+      line-height: 48px;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 45px;
+      font-weight: 600;
+      line-height: 48px;
+      padding: 0px 0px 17px 1px;
+      letter-spacing: 1.25px;
+    }
+    p {
+      line-height: 25.9999999px;
+      font-size: 18px;
+      letter-spacing: 0px;
+      padding: 0px 0 59px 0px;
+    }
+    button {
+      &:nth-child(4) {
+        margin: 0 17px 0 0px;
+        padding: 12px 26px 12px 27px;
+      }
+      &:nth-child(5) {
+        padding: 12px 30px;
+      }
+    }
+  }
+}

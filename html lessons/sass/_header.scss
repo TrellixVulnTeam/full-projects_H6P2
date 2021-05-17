@@ -1,0 +1,26 @@
+.nav {
+  background-color: $primary-color;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: auto;
+  height: auto;
+  li {
+    float: left;
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    height: auto;
+    a {
+      display: block;
+      color: #FFF;
+      text-decoration: none;
+      padding:15px 15px 15px 15px;
+    }
+    :hover {
+      background-color: $secondary-color;
+      color: $white-color;
+    }
+  }
+}

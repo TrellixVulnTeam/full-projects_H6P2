@@ -1,0 +1,22 @@
+.contactForm {
+  input, textarea, select {
+    display: block;
+    width: 15%;
+    margin: 5px auto;
+    padding: 6px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid $black-color;
+    text-align: center;
+    &:hover, &:focus, &:focus-within, &:active {
+      border: 1px solid $primary-color;
+    }
+  }
+  label {
+    text-align: center;
+    display: block;
+  }
+  h2 {
+    display: block;
+  }
+}

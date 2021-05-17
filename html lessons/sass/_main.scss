@@ -1,0 +1,28 @@
+body {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  background-color: $white-color;
+}
+.clear {
+  clear: both;
+}
+.containers {
+  width: 968px;
+  display: block;
+  margin: 30px auto;
+}
+a {
+  text-decoration: none;
+  color: $secondary-color;
+  font-weight: 700;
+}
+a:hover, a:focus {
+  color: $white-color;
+}
+dialog {
+      position: static;
+}
+figure {
+  margin: 0;
+}
